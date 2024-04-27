@@ -1,0 +1,235 @@
+html - hyper text mark up language
+===================================
+
+- it provide the view to the user
+
+- mark up language
+--------------------
+
+ - it is a language is used to add struecture to a text document.
+ 
+criteria for a language
+-----------------------
+
+give and understand the instructions to and from a computer. 2 way
+
+- bridge b-w human and machine
+
+==================================
+
+as a tester we dont need to understand the coding part or design part , ionly requred is to understand thye component like element.
+
+------------------
+
+
+defintions 
+----------
+Doctype html --- what type of file it is?
+html
+head -- it contacins title of the web page
+body --- entire screen is the body area,
+
+note:- in body everything will be shown
+
+h1 tag ---- diff size
+centre tag --- to allign the heading or somrthing into the centre.
+p tag --- paragraph tag
+
+list
+----
+
+Unordered list <ul>  
+                   <li>  apple </li>
+                   <li>  banaba </li>
+                   <li>  oranges </li>
+               </ul>
+ordered list <ol>  
+                   <li>  apple </li>
+                   <li>  banaba </li>
+                   <li>  oranges </li>
+               </ol>
+
+em ---- emphasis tag to italice the content
+
+==============================================
+
+index.html
+---------
+
+under body -- header --- introductory content
+    -- also in header area we can provide some navigations
+
+nav --- navigation --- to link a page to other
+
+href --- for inserting link it is used under anchor tag.
+
+section - the section element represents the generic section of a document.
+
+=============================
+
+login.html 
+
+input --- no closing tag
+   -- its tuype should be like text, passord, checkbox, radio button. etc i.e whta iput we r giving
+   eg   <input type="text" id="username" name="username" placeholder="email address">
+
+label --- what type of input is it , we wll provide label , for example user name. and below it we wll give input.
+ eg <label for="Password">Password:</label>
+        
+for password input type will be passowrd not text as to secure the data.
+ eg <input type="Password" id="Password" name="Password" placeholder="minimum 6 characters req">
+
+value -- under input tag , we ahhve to assign some other name so we use value.
+
+  eg <input type="submit" value="login">
+
+form - it is a container for input elements (like , password . cjeckboxes, radi0 button).
+     - it is a input for server , which is send for processing the data.  
+     - server can match the data with db and send confirmation messsage that , ur creds are ok  (this is not part of form)
+     - so to sending the data to the server , we use form.
+
+eg   <body>
+        <h1>Login</h1>
+     <form action="first.html" method="get">   /// ******** get is not secure we use post 
+        <label for="Username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="email address">
+        <br> <br>
+        <label for="Password">Password:</label>
+        <input type="Password" id="Password" name="Password" placeholder="minimum 6 characters req">
+        <br> <br>
+
+        <!-- for getting submit on button -->
+        <!-- <input type="submit">      -->
+
+        <!-- for getting login written on button we will add it in  value -->
+        <input type="submit" value="login">    
+    </form>
+    </body>
+
+ ---- note action will process after submitting the login button
+
+checkbox
+--------
+
+- used for selecting some data
+  for eg  <input type="checkbox" id="checkbox1" name="checkbox1" value="">   
+        <label for="checkbox">remember me</label>
+
+radio button
+------------
+
+        <label for="radio">semectmale</label>
+        <input type="radio" id="radio1" name="selectmale" value="male">
+
+        <label for="radio">select female</label>
+        <input type="radio" id="radio2" name="selectfemale" value="female">
+
+
+                     -----------------note for adding validation we use required-----------------
+
+
+  
+table 
+------
+for header th    1
+for row tr       3
+for column td    3
+
+
+              for header
+              <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>city</th>
+            </tr>
+
+
+             row1 - column 3
+            <tr>
+               
+                <td>avi</td>
+                <td>23</td>
+                <td>patna</td>
+            </tr>
+
+
+            row2 - column 3
+
+            <tr>
+                <td>anand</td>
+                <td>32</td>
+                <td>delhi</td>
+            </tr>
+
+              and so on
+
+==========================================================
+
+div
+----
+
+- it is something like logical block.
+-class= blue is used for styling css
+- and css is defind in head under style.
+
+  example : -  <div class="blue">
+            <table border="4">
+            
+                <tr>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>city</th>
+                </tr>
+    
+                <tr>
+                   
+                    <td>avi</td>
+                    <td>23</td>
+                    <td>patna</td>
+                </tr>
+    
+                <tr>
+                    <td>anand</td>
+                    <td>32</td>
+                    <td>delhi</td>
+                </tr>
+            </table>
+
+        </div>
+   =====================================================
+
+dropdown
+--------
+
+- select is use for dropdown
+
+ <label for="dropdown">please select your car</label>
+        <select name="dropdown" id="car" name="car">
+            <option>bmw</option>
+            <option>audo</option>
+            <option>volvo</option>
+        </select>
+
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
